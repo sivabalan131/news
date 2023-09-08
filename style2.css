@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: rgb(234,241,251);
+}
+#title{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+   align-items: center;
+   justify-content: start;
+    column-gap: 10px;
+    
+
+}
+#sidebar{
+    height: 500px;
+    width: 250px;
+  background-color:rgba(0, 128, 0, 0.7);
+    margin-top: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10000;
+}
+.container{
+    display: flex;
+   justify-content: end;
+    
+}
+.navbar ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+.navbar button{
+    width: fit-content;
+    padding: 17px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.navbar button:hover{
+    background-color: white;
+    color: black;
+}
+ ul .activate{
+    border-bottom: 4px solid lightblue;
+}
+.title1 p{
+    font-weight: bold;
+    height: fit-content;
+    width: 300px;
+    padding: 10px;
+font-size: 0.9rem;
+
+}
+
+
+.title1{
+    border: 1px solid black;
+    padding:15px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   border-radius: 10px;
+   height: 500px;
+   width: 290px;
+    position: relative;
+    box-shadow: inset 0 0 10px,0 0 ;
+    
+}
+
+
+
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 128, 0, 0.7);
+    
+}
+.navbar h1{
+    position: absolute;
+    left: 5%;
+    padding: 5px;
+    color: white;
+    opacity: 1.5;
+    font-weight:700px;
+}
+
+
+.image{
+    height: 200px;
+    width: 200px;
+}
+.intro h1{
+    margin-left: 5%;
+    padding: 10px;
+}
+.intro p{
+    margin-left: 5%;
+    padding: 10px;
+}
+#readb{
+    padding: 5px;
+    margin: 10px;
+    position: absolute;
+    left: 0;
+   
+}
+#readb a{
+    text-decoration: none;
+    color: white;
+  
+    
+}
+#readb{
+    background-color: green;
+    border: none;
+    padding: 10px;
+}
+#search{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translatey(-50%);    
+}
+#search input{
+    padding: 10px;
+    border: none;
+    outline: 0;
+    border-radius: 7px;
+}
+#search button{
+    background-color: transparent;
+    color: white;
+    padding:10px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin: 10px;
+    outline: 0;
+    font-size: 15px;
+}
+#search button:hover{
+    background-color: gray;
+    opacity: 0.7;
+}
+.country1 select{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 7px;
+    outline: 0;
+    border: none;
+}
+#sidebar{
+    display: flex;
+    align-items: center;
+    background-color:rgb(70,162,75);
+    text-align: center;
+ position: relative;
+left: -210px;
+ transition: all 1s ease;
+ position: fixed;
+ top: 60px;
+display: none;
+
+}
+#sidebar ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    row-gap: 0px;
+display: none;
+
+}
+#sidebar ul button{
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+#sidebar ul button:hover{
+    background-color: white;
+    color: blue;
+}
+#click{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#sidebar button i{
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    
+}
+#sidebar button{
+    background-color: transparent;
+    border: none;
+}
+/*.active{
+    transform: translate(165px);
+    
+}*/
+#sidebar:hover{
+    transform: translate(165px);
+    
+}
+#sidebar:hover ul{
+    display: flex;
+}
+#movetext{
+    font-weight: bold;
+    color: red;
+}
+#movingtext span{
+    color: black;
+}
+#nodata{
+    font-weight: bold;
+   position: relative;
+   top: 150px;
+    right: 50%;
+    font-size: 30px;
+    
+    
+   
+}
+#error
+{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+@media only screen and (max-device-width:480px)
+{
+    .navbar{
+        height: 500px;
+        display: block;
+        
+    }
+    .country1{
+       position: absolute;
+       top: 20%;
+       left: 27%;
+       transform: translate(-50%);
+    }
+   #search
+   {
+    position: absolute;
+    top: 35%;
+   }
+    .navbar ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 70%;
+        left: 50%;
+        
+    }
+    .navbar h1{
+        position: absolute;
+        top: 10px;
+        
+        
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #sidebar{
+        transform: translate(-100px);
+    }
+    .intro h1{
+        font-size: 20px;
+    }
+    .container{
+        display: flex;
+    }
+    #title{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    #error{
+        position: absolute;
+        top: 1100px;
+        left:50%;
+        transform: translate(-50%)
+    }
+}
